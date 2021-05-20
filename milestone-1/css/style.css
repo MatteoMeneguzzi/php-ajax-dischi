@@ -7,8 +7,8 @@
 /* UTILITIES */
 
 .container {
-	width: 1070px;
-	display: flex;
+	margin: 0 auto;
+	max-width: 1070px;
 }
 
 /* HEADER */
@@ -33,17 +33,14 @@ main {
 }
 
 main.content .container {
-	margin: 0 auto;
-	width: 1000px;
 	display: flex;
-	flex-direction: row;
-	align-items: space-around;
-	justify-content: center;
 	padding: 2em;
+	width: calc(100% - 400px);
 }
 
 main.content .container .box {
-	width: calc(100% / 3) - 20px;
+	background: black;
+	width: calc(100% - 400px);
 	margin: 0px 10px;
 }
 

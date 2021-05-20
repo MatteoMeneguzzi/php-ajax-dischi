@@ -27,28 +27,28 @@ include __DIR__ . '/database.php'
         <!-- CONTENT -->
         <main class="content">
             <div class="container">
-                <div class="box">
-                    <ul>
-                        <?php
+                 <?php
                             foreach ($database as $album) { ?>
-                        <li class="img-container">
-                            <img src="<?php echo $album['poster']; ?>" alt="album-poster">
-                        </li>
-                        <li> 
-                            <?php echo $album['title']; ?>
-                        </li>
-                        <li> 
-                            <?php echo $album['author']; ?>
-                        </li>
-                        <li> 
-                            <?php echo $album['year']; ?>
-                        </li>
-                        <li> 
-                            <?php echo $album['genre']; ?>
-                        </li>
-                        <?php } ?>
-                    </ul>
-                </div>
+                    <div class="box">      
+                        <ul>
+                            <li class="img-container">
+                                <img src="<?php echo $album['poster']; ?>" alt="album-poster">
+                            </li>
+                            <li> 
+                                <?php echo $album['title']; ?>
+                            </li>
+                            <li> 
+                                <?php echo $album['author']; ?>
+                            </li>
+                            <li> 
+                                <?php echo $album['year']; ?>
+                            </li>
+                            <li> 
+                                <?php echo $album['genre']; ?>
+                            </li>  
+                        </ul>    
+                    </div>
+                <?php } ?>
             </div>
         </main>
     </div>
