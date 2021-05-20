@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spotify-PHP-not-only</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="../milestone-1/css/style.css" />
+		<!-- VUE -->
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!-- HEADER -->
+			<header>
+				<div class="container">
+					<div class="logo">
+						<img src="./logo.png" alt="spotify-logo" />
+					</div>
+				</div>
+			</header>
+
+			<!-- CONTENT -->
+			<main class="content">
+				<div class="container">
+					<div class="box" v-for="album in albums">
+						<ul>
+							<li class="img-container">
+								<img :src="album.poster" :alt="album.poster" />
+							</li>
+							<li>
+								<strong>{{ album.title }}</strong>
+							</li>
+							<li>{{ album.author}}</li>
+							<li>{{ album.year}}</li>
+							<li>{{ album.genre}}</li>
+						</ul>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<!-- AXIOS + JS -->
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
