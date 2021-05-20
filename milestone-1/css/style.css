@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
 }
 
 /* UTILITIES */
@@ -29,23 +30,37 @@ header .container .logo img {
 /* CONTENT */
 
 main {
-	background-color: rgba(24, 217, 96, 0.6);
+	background-color: rgba(24, 217, 96, 0.4);
+	height: 100vh;
 }
 
 main.content .container {
 	display: flex;
 	padding: 2em;
-	width: calc(100% - 400px);
+	flex-wrap: wrap;
 }
 
 main.content .container .box {
-	background: black;
-	width: calc(100% - 400px);
-	margin: 0px 10px;
+	padding: 20px;
+	text-align: center;
+	background: rgba(10, 104, 45, 0.5);
+	width: calc((100% / 3) - 20px);
+	margin: 10px 10px;
+	border-radius: 5px;
 }
 
-main.content .container .box ul .img-container {
-	width: 100px;
+main.content .container .box ul {
+	list-style: none;
+}
+
+main.content .container .box ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+main.content .container .box ul li.img-container {
+	width: 150px;
+	margin: 0 auto;
+	margin-bottom: 20px;
 }
 
 main.content .container .box ul .img-container img {
