@@ -32,6 +32,15 @@ header .container .logo img {
 main {
 	background-color: rgba(24, 217, 96, 0.4);
 	height: 100vh;
+	text-align: center;
+}
+
+main .select-container {
+	padding-top: 50px;
+}
+
+main .select-container label {
+	margin-right: 20px;
 }
 
 main.content .container {
